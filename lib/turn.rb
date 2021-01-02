@@ -40,7 +40,7 @@ def turn(board)
     move(board, index, token = "X")
     
   else
-    turn(user_input)
+    turn(board)
   end
 
 end
