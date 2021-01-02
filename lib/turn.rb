@@ -23,7 +23,7 @@ elsif board[index] == " " || "" || nil
 end
 
 def valid_move?(board, index)
-  index = index.to_i-1
+  index = user_input.to_i-1
   if index.between?(0,8) && !position_taken?(board, index)
     true
   else
@@ -36,11 +36,6 @@ def turn(board)
   user_input = gets.strip
   index = input_to_index(index)
 
-  if valid_move?(board, index)
-    move(board, index, token = "X")
-    display_board(board)
-  else
-    turn(user_input)
-  end
+
 
 end
