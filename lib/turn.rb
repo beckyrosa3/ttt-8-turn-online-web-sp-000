@@ -6,8 +6,7 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def move(board, user_input, token = "X")
-  user_input = index-1
+def move(board, index, token = "X")
   board[index] = token
 end
 
